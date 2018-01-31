@@ -1,13 +1,10 @@
 import random
 
 def trx(choice, monty_stall=[1,0,0]):
-    monty_stall=[1,0,0]
-    choice=choice
-    del monty_stall[choice]
-    if 1 in monty_stall:
-        return 1
-    else:
-        return 0
+
+    x=1- monty_stall[choice]
+    return x
+    
 
 def monty_hall(my_stall,N):
     wins = 0
